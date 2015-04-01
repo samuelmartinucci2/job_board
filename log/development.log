@@ -1,0 +1,1079 @@
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2015-04-01 11:02:28 -0300
+
+Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
+  mysql2 (0.3.18) lib/mysql2/client.rb:70:in `connect'
+  mysql2 (0.3.18) lib/mysql2/client.rb:70:in `initialize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+  activerecord (4.2.1) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /usr/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /usr/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:567:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (14.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (29.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 11:02:30 -0300
+
+Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
+  mysql2 (0.3.18) lib/mysql2/client.rb:70:in `connect'
+  mysql2 (0.3.18) lib/mysql2/client.rb:70:in `initialize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+  activerecord (4.2.1) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /usr/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /usr/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:567:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (11.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (23.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 11:03:09 -0300
+
+Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
+  mysql2 (0.3.18) lib/mysql2/client.rb:70:in `connect'
+  mysql2 (0.3.18) lib/mysql2/client.rb:70:in `initialize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+  activerecord (4.2.1) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /usr/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /usr/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:567:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (12.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (25.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 11:03:29 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /var/lib/gems/2.1.0/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 27ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello/world" for 127.0.0.1 at 2015-04-01 11:04:19 -0300
+Processing by HelloController#world as HTML
+  Rendered hello/world.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 555ms (Views: 554.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hello-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-01 11:04:20 -0300
+
+
+Started GET "/assets/hello-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-01 11:04:20 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 11:04:20 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 11:04:20 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 11:04:20 -0300
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 127.0.0.1 at 2015-04-01 11:04:20 -0300
+
+
+Started GET "/hello/world" for 127.0.0.1 at 2015-04-01 11:05:03 -0300
+Processing by HelloController#world as HTML
+  Rendered hello/world.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 127.0.0.1 at 2015-04-01 11:05:03 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 11:05:03 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 11:05:03 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 11:05:03 -0300
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (5.6ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateJobs (20150401142633)
+  [1m[35m (1.0ms)[0m  CREATE TABLE `jobs` (`id` int(11) auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150401142633')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'job-board_development'
+  AND fk.table_name = 'jobs'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `jobs`
+
+
+Started GET "/jobs" for 127.0.0.1 at 2015-04-01 11:27:35 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.3ms)[0m  SELECT `jobs`.* FROM `jobs`
+  Rendered jobs/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 236ms (Views: 233.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jobs-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-01 11:27:35 -0300
+
+
+Started GET "/assets/jobs-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-01 11:27:35 -0300
+
+
+Started GET "/assets/scaffolds-16e8f099e5b39bde129ad3abe9df20b6.css?body=1" for 127.0.0.1 at 2015-04-01 11:27:35 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 11:27:35 -0300
+
+
+Started GET "/assets/application-6f84d7e1ee0a274ec3f8624ee94b5f19.css?body=1" for 127.0.0.1 at 2015-04-01 11:27:35 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 11:27:35 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 11:27:35 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 11:27:35 -0300
+
+
+Started GET "/jobs/new" for 127.0.0.1 at 2015-04-01 11:27:42 -0300
+Processing by JobsController#new as HTML
+  Rendered jobs/_form.html.erb (18.1ms)
+  Rendered jobs/new.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 86ms (Views: 81.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/jobs" for 127.0.0.1 at 2015-04-01 11:27:47 -0300
+Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KzXqBrg6QuUDTb9+r90s/eqVWrgh5f/5KCnvouzQIxbrTET0sN5HWnMaMIKy9ePc2xvw9dq7Yix11IJpeKGMEg==", "job"=>{"title"=>"teste", "description"=>"testedesc"}, "commit"=>"Create Job"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `jobs` (`title`, `description`, `created_at`, `updated_at`) VALUES ('teste', 'testedesc', '2015-04-01 14:27:47', '2015-04-01 14:27:47')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/jobs/1
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/jobs/1" for 127.0.0.1 at 2015-04-01 11:27:47 -0300
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mJob Load (0.3ms)[0m  SELECT  `jobs`.* FROM `jobs` WHERE `jobs`.`id` = 1 LIMIT 1
+  Rendered jobs/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 58ms (Views: 52.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 11:27:48 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 11:27:48 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 11:27:48 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 11:27:48 -0300
+
+
+Started GET "/jobs" for 127.0.0.1 at 2015-04-01 11:27:52 -0300
+Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT `jobs`.* FROM `jobs`[0m
+  Rendered jobs/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 60ms (Views: 58.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2015-04-01 11:29:01 -0300
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.3ms)[0m  SELECT `jobs`.* FROM `jobs`
+  Rendered jobs/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 65ms (Views: 61.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 11:29:02 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 11:29:02 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 11:29:02 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 11:29:02 -0300
+
+
+Started GET "/jobs/new" for 127.0.0.1 at 2015-04-01 11:29:03 -0300
+Processing by JobsController#new as HTML
+  Rendered jobs/_form.html.erb (1.8ms)
+  Rendered jobs/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/jobs" for 127.0.0.1 at 2015-04-01 11:29:04 -0300
+Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VhPmJ+t+rEl5fR8q472oT2E8R6XmMGZ3aECDR9+0MaiWakjV45qp9gkqkNb+lWduULLt6B1u+6I1ve6MS8WerA==", "job"=>{"title"=>"", "description"=>""}, "commit"=>"Create Job"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered jobs/_form.html.erb (3.6ms)
+  Rendered jobs/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 69ms (Views: 64.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 11:29:04 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 11:29:04 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 11:29:04 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 11:29:04 -0300
+
+
+Started POST "/jobs" for 127.0.0.1 at 2015-04-01 11:29:15 -0300
+Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xCqPzxGM9C0g60Tj+GDuVTpu6UNVMzHPxulsN7ktajMEUyE9GWjxklC8yx/lSCF0C+BDDq5trBqbFAH8LVzFNw==", "job"=>{"title"=>"teste", "description"=>""}, "commit"=>"Create Job"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered jobs/_form.html.erb (2.0ms)
+  Rendered jobs/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 59ms (Views: 55.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 11:29:15 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 11:29:15 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 11:29:15 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 11:29:15 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 11:33:41 -0300
+
+NameError (undefined local variable or method `jobs' for #<ActionDispatch::Routing::Mapper:0x00000003bb2238>):
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (11.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (23.3ms)
+
+
+Started POST "/jobs" for 127.0.0.1 at 2015-04-01 11:33:41 -0300
+
+ActionController::RoutingError (No route matches [POST] "/jobs"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (14.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (27.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 11:34:10 -0300
+Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT `jobs`.* FROM `jobs`[0m
+  Rendered jobs/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 56ms (Views: 52.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 11:34:10 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 11:34:10 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 11:34:10 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 11:34:10 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 11:34:11 -0300
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.4ms)[0m  SELECT `jobs`.* FROM `jobs`
+  Rendered jobs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 79ms (Views: 77.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 11:34:11 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 11:34:11 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 11:34:11 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 11:34:11 -0300
+
+
+Started GET "/hello/world" for 127.0.0.1 at 2015-04-01 11:37:51 -0300
+Processing by HelloController#world as HTML
+  Rendered hello/world.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 64ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 11:37:52 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 11:37:52 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 11:37:52 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 11:37:52 -0300
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT  `jobs`.* FROM `jobs`  ORDER BY `jobs`.`id` ASC LIMIT 1[0m
+  [1m[35mJob Load (0.3ms)[0m  SELECT `jobs`.* FROM `jobs`
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddPremiumToJobs (20150401144458)
+  [1m[35m (3.3ms)[0m  ALTER TABLE `jobs` ADD `premium` tinyint(1)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150401144458')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'job-board_development'
+  AND fk.table_name = 'jobs'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `jobs`
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 11:47:04 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.5ms)[0m  SELECT `jobs`.* FROM `jobs`
+  Rendered jobs/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 64ms (Views: 60.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 11:47:04 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 11:47:04 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 11:47:04 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 11:47:04 -0300
+
+
+Started GET "/jobs/new" for 127.0.0.1 at 2015-04-01 11:47:05 -0300
+Processing by JobsController#new as HTML
+  Rendered jobs/_form.html.erb (9.1ms)
+  Rendered jobs/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 69ms (Views: 67.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/jobs" for 127.0.0.1 at 2015-04-01 11:47:10 -0300
+Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bTOHkD2LHrugwNnH8nZYjWfbAu910VFKy9Cb2+bchNGtSiliNW8bBNCXVjvvXpesVlWooo6PzJ+WLfYQcq0r1Q==", "job"=>{"title"=>"teste", "description"=>"teste", "premium"=>"1"}, "commit"=>"Create Job"}
+Unpermitted parameter: premium
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `jobs` (`title`, `description`, `created_at`, `updated_at`) VALUES ('teste', 'teste', '2015-04-01 14:47:10', '2015-04-01 14:47:10')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/jobs/2
+Completed 302 Found in 5ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/jobs/2" for 127.0.0.1 at 2015-04-01 11:47:10 -0300
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mJob Load (0.2ms)[0m  SELECT  `jobs`.* FROM `jobs` WHERE `jobs`.`id` = 2 LIMIT 1
+  Rendered jobs/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 11:47:11 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 11:47:11 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 11:47:11 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 11:47:11 -0300
+
+
+Started GET "/jobs/2" for 127.0.0.1 at 2015-04-01 12:01:49 -0300
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT  `jobs`.* FROM `jobs` WHERE `jobs`.`id` = 2 LIMIT 1[0m
+  Rendered jobs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 75ms (Views: 64.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 12:01:49 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 12:01:49 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 12:01:49 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 12:01:49 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 12:01:52 -0300
+Processing by JobsController#premium as HTML
+  [1m[35mJob Load (0.3ms)[0m  SELECT `jobs`.* FROM `jobs` WHERE `jobs`.`premium` = 1
+  Rendered jobs/premium.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 12:01:52 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 12:01:52 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 12:01:52 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 12:01:52 -0300
+
+
+Started GET "/jobs/new" for 127.0.0.1 at 2015-04-01 12:01:54 -0300
+Processing by JobsController#new as HTML
+  Rendered jobs/_form.html.erb (3.7ms)
+  Rendered jobs/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 91ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/jobs" for 127.0.0.1 at 2015-04-01 12:01:58 -0300
+Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WmSCNRIr9Gz8wuPYzXrjeNvZXNfqdvPGUDpC+uMUTuGaHSzHGs/x04yVbCTQUixZ6lf2mhEobhMNxy8xd2Xh5Q==", "job"=>{"title"=>"teste", "description"=>"teste", "premium"=>"1"}, "commit"=>"Create Job"}
+Unpermitted parameter: premium
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `jobs` (`title`, `description`, `created_at`, `updated_at`) VALUES ('teste', 'teste', '2015-04-01 15:01:58', '2015-04-01 15:01:58')
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/jobs/3
+Completed 302 Found in 7ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/jobs/3" for 127.0.0.1 at 2015-04-01 12:01:58 -0300
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mJob Load (0.4ms)[0m  SELECT  `jobs`.* FROM `jobs` WHERE `jobs`.`id` = 3 LIMIT 1
+  Rendered jobs/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 80ms (Views: 78.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 12:01:58 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 12:01:58 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 12:01:58 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 12:01:58 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 12:02:05 -0300
+Processing by JobsController#premium as HTML
+  [1m[36mJob Load (0.5ms)[0m  [1mSELECT `jobs`.* FROM `jobs` WHERE `jobs`.`premium` = 1[0m
+  Rendered jobs/premium.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 87ms (Views: 85.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 12:02:05 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 12:02:05 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 12:02:05 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 12:02:05 -0300
+
+
+Started GET "/jobs/new" for 127.0.0.1 at 2015-04-01 12:02:13 -0300
+Processing by JobsController#new as HTML
+  Rendered jobs/_form.html.erb (3.4ms)
+  Rendered jobs/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 88ms (Views: 86.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2015-04-01 12:02:16 -0300
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.5ms)[0m  SELECT `jobs`.* FROM `jobs`
+  Rendered jobs/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 97ms (Views: 95.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/jobs/3/edit" for 127.0.0.1 at 2015-04-01 12:02:19 -0300
+Processing by JobsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mJob Load (0.6ms)[0m  [1mSELECT  `jobs`.* FROM `jobs` WHERE `jobs`.`id` = 3 LIMIT 1[0m
+  Rendered jobs/_form.html.erb (3.9ms)
+  Rendered jobs/edit.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 100ms (Views: 97.2ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/jobs/3" for 127.0.0.1 at 2015-04-01 12:02:22 -0300
+Processing by JobsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fQJwVM1tq+X2DESNIuCmZLmZDIdMpQZN5qwZX5gcSy+9e96mxYmuWoZby3E/yGlFiBemyrf7m5i7UXSUDG3kKw==", "job"=>{"title"=>"teste", "description"=>"teste", "premium"=>"1"}, "commit"=>"Update Job", "id"=>"3"}
+  [1m[35mJob Load (0.4ms)[0m  SELECT  `jobs`.* FROM `jobs` WHERE `jobs`.`id` = 3 LIMIT 1
+Unpermitted parameter: premium
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/jobs/3
+Completed 302 Found in 6ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/jobs/3" for 127.0.0.1 at 2015-04-01 12:02:22 -0300
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mJob Load (0.6ms)[0m  [1mSELECT  `jobs`.* FROM `jobs` WHERE `jobs`.`id` = 3 LIMIT 1[0m
+  Rendered jobs/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 86ms (Views: 84.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 12:02:22 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 12:02:22 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 12:02:22 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 12:02:22 -0300
+
+
+Started GET "/jobs" for 127.0.0.1 at 2015-04-01 12:02:24 -0300
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.5ms)[0m  SELECT `jobs`.* FROM `jobs`
+  Rendered jobs/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 87ms (Views: 85.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/jobs/3/edit" for 127.0.0.1 at 2015-04-01 12:02:27 -0300
+Processing by JobsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mJob Load (0.5ms)[0m  [1mSELECT  `jobs`.* FROM `jobs` WHERE `jobs`.`id` = 3 LIMIT 1[0m
+  Rendered jobs/_form.html.erb (4.2ms)
+  Rendered jobs/edit.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 102ms (Views: 99.6ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/jobs/3" for 127.0.0.1 at 2015-04-01 12:04:28 -0300
+Processing by JobsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ox9nK78BXyQToAA8PilOEEqtJhXPMab4LB3wufrf3WljZsnZt+Vam2P3j8AjAYExeyOMWDRvOy1x4J1ybq5ybQ==", "job"=>{"title"=>"teste", "description"=>"teste", "premium"=>"1"}, "commit"=>"Update Job", "id"=>"3"}
+  [1m[35mJob Load (0.5ms)[0m  SELECT  `jobs`.* FROM `jobs` WHERE `jobs`.`id` = 3 LIMIT 1
+Unpermitted parameter: premium
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/jobs/3
+Completed 302 Found in 6ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/jobs/3" for 127.0.0.1 at 2015-04-01 12:04:28 -0300
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mJob Load (0.5ms)[0m  [1mSELECT  `jobs`.* FROM `jobs` WHERE `jobs`.`id` = 3 LIMIT 1[0m
+  Rendered jobs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 80ms (Views: 78.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 12:04:28 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 12:04:28 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 12:04:28 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 12:04:28 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 12:12:09 -0300
+Processing by JobsController#premium as HTML
+  [1m[35mJob Load (0.5ms)[0m  SELECT `jobs`.* FROM `jobs` WHERE `jobs`.`premium` = 1
+  Rendered collection (0.0ms)
+  Rendered jobs/premium.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 84ms (Views: 82.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 12:12:09 -0300
+Processing by JobsController#premium as HTML
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT `jobs`.* FROM `jobs` WHERE `jobs`.`premium` = 1[0m
+  Rendered collection (0.0ms)
+  Rendered jobs/premium.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 12:12:09 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 12:12:09 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 12:12:09 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 12:12:09 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 12:12:46 -0300
+Processing by JobsController#premium as HTML
+  [1m[35mJob Load (0.4ms)[0m  SELECT `jobs`.* FROM `jobs` WHERE `jobs`.`premium` = 1
+  Rendered collection (0.0ms)
+  Rendered jobs/premium.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 69ms (Views: 67.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 12:12:46 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 12:12:46 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 12:12:46 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 12:12:46 -0300
+
+
+Started GET "/jobs" for 127.0.0.1 at 2015-04-01 12:12:48 -0300
+Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.6ms)[0m  [1mSELECT `jobs`.* FROM `jobs`[0m
+  Rendered jobs/_job.html.erb (5.4ms)
+  Rendered jobs/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 100ms (Views: 98.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 12:14:03 -0300
+Processing by JobsController#premium as HTML
+  [1m[35mJob Load (0.5ms)[0m  SELECT `jobs`.* FROM `jobs` WHERE `jobs`.`premium` = 1
+  Rendered collection (0.0ms)
+  Rendered jobs/premium.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 105ms (Views: 103.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/jobs/new" for 127.0.0.1 at 2015-04-01 12:14:05 -0300
+Processing by JobsController#new as HTML
+  Rendered jobs/_form.html.erb (4.8ms)
+  Rendered jobs/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 90ms (Views: 88.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/jobs" for 127.0.0.1 at 2015-04-01 12:14:14 -0300
+Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JKsUzblaEV8Cwuvy/MMTJLOUY/1NSw8vJIvQhOi7Rmzk0ro/sb4U4HKVZA7h69wFghrJsLYVkvp5dr1PfMrpaA==", "job"=>{"title"=>"Title", "description"=>"Description", "premium"=>"1"}, "commit"=>"Create Job"}
+Unpermitted parameter: premium
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `jobs` (`title`, `description`, `created_at`, `updated_at`) VALUES ('Title', 'Description', '2015-04-01 15:14:14', '2015-04-01 15:14:14')
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/jobs/4
+Completed 302 Found in 8ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/jobs/4" for 127.0.0.1 at 2015-04-01 12:14:14 -0300
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mJob Load (0.5ms)[0m  SELECT  `jobs`.* FROM `jobs` WHERE `jobs`.`id` = 4 LIMIT 1
+  Rendered jobs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 86ms (Views: 84.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 12:14:14 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 12:14:14 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 12:14:14 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 12:14:14 -0300
+
+
+Started GET "/jobs" for 127.0.0.1 at 2015-04-01 12:14:16 -0300
+Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.5ms)[0m  [1mSELECT `jobs`.* FROM `jobs`[0m
+  Rendered jobs/_job.html.erb (5.0ms)
+  Rendered jobs/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 93ms (Views: 91.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2015-04-01 12:14:59 -0300
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.4ms)[0m  SELECT `jobs`.* FROM `jobs`
+  Rendered jobs/_job.html.erb (5.0ms)
+  Rendered jobs/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 83ms (Views: 81.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 12:15:00 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 12:15:00 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 12:15:00 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 12:15:00 -0300
+
+
+Started GET "/jobs/4" for 127.0.0.1 at 2015-04-01 12:15:03 -0300
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mJob Load (0.5ms)[0m  [1mSELECT  `jobs`.* FROM `jobs` WHERE `jobs`.`id` = 4 LIMIT 1[0m
+  Rendered jobs/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 92ms (Views: 89.6ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/jobs/3" for 127.0.0.1 at 2015-04-01 12:15:12 -0300
+Processing by JobsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aqvWmuVPo/OYaQ7HFSm99Pv55i7/4Pr/nM+o2S1JXf2q0nho7aumTOg+gTsIAXLVyndMYwS+ZyrBMsUSuTjy+Q==", "id"=>"3"}
+  [1m[35mJob Load (0.3ms)[0m  SELECT  `jobs`.* FROM `jobs` WHERE `jobs`.`id` = 3 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `jobs` WHERE `jobs`.`id` = 3
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/jobs
+Completed 302 Found in 5ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2015-04-01 12:15:12 -0300
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.3ms)[0m  SELECT `jobs`.* FROM `jobs`
+  Rendered jobs/_job.html.erb (2.5ms)
+  Rendered jobs/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 79ms (Views: 78.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 12:15:12 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 12:15:12 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 12:15:12 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 12:15:12 -0300
+
+
+Started DELETE "/jobs/1" for 127.0.0.1 at 2015-04-01 12:15:14 -0300
+Processing by JobsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"llRJAKUZUdW7OCyEKE3yfVs0qkRhy9hot/N7ZvhcWipWLefyrf1Uastvo3g1ZT1caroACZqVRb3qDhatbC31Lg==", "id"=>"1"}
+  [1m[36mJob Load (0.4ms)[0m  [1mSELECT  `jobs`.* FROM `jobs` WHERE `jobs`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `jobs` WHERE `jobs`.`id` = 1[0m
+  [1m[35m (4.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/jobs
+Completed 302 Found in 8ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2015-04-01 12:15:14 -0300
+Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT `jobs`.* FROM `jobs`[0m
+  Rendered jobs/_job.html.erb (1.6ms)
+  Rendered jobs/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 12:15:14 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 12:15:14 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 12:15:14 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 12:15:14 -0300
+
+
+Started GET "/jobs/new" for 127.0.0.1 at 2015-04-01 12:16:25 -0300
+Processing by JobsController#new as HTML
+  Rendered jobs/_form.html.erb (3.5ms)
+  Rendered jobs/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 84ms (Views: 72.9ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/jobs" for 127.0.0.1 at 2015-04-01 12:16:32 -0300
+Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L4fvn1B7gBecWP2GVDBQqwv4L4cgEbgcU4WvRz29TY7v/kFtWJ+FqOwPcnpJGJ+KOnaFyttPJckOeMKMqcziig==", "job"=>{"title"=>"Teste", "description"=>"Teste2", "premium"=>"1"}, "commit"=>"Create Job"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `jobs` (`title`, `description`, `premium`, `created_at`, `updated_at`) VALUES ('Teste', 'Teste2', 1, '2015-04-01 15:16:32', '2015-04-01 15:16:32')[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/jobs/5
+Completed 302 Found in 8ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/jobs/5" for 127.0.0.1 at 2015-04-01 12:16:32 -0300
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mJob Load (0.5ms)[0m  [1mSELECT  `jobs`.* FROM `jobs` WHERE `jobs`.`id` = 5 LIMIT 1[0m
+  Rendered jobs/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 76ms (Views: 73.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 12:16:32 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 12:16:32 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 12:16:32 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 12:16:32 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 12:16:38 -0300
+Processing by JobsController#premium as HTML
+  [1m[35mJob Load (0.5ms)[0m  SELECT `jobs`.* FROM `jobs` WHERE `jobs`.`premium` = 1
+  Rendered jobs/_job.html.erb (1.7ms)
+  Rendered jobs/premium.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 82ms (Views: 80.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 12:16:38 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 12:16:38 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 12:16:38 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 12:16:38 -0300
+
+
+Started GET "/jobs" for 127.0.0.1 at 2015-04-01 12:16:43 -0300
+Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.5ms)[0m  [1mSELECT `jobs`.* FROM `jobs`[0m
+  Rendered jobs/_job.html.erb (4.4ms)
+  Rendered jobs/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 107ms (Views: 106.0ms | ActiveRecord: 0.5ms)
