@@ -1077,3 +1077,116 @@ Processing by JobsController#index as HTML
   Rendered jobs/_job.html.erb (4.4ms)
   Rendered jobs/index.html.erb within layouts/application (7.1ms)
 Completed 200 OK in 107ms (Views: 106.0ms | ActiveRecord: 0.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateComments (20150401161519)
+  [1m[35m (2.6ms)[0m  CREATE TABLE `comments` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `body` text, `job_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150401161519')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'job-board_development'
+  AND fk.table_name = 'comments'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `comments`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'job-board_development'
+  AND fk.table_name = 'jobs'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `jobs`
+
+
+Started GET "/jobs" for 127.0.0.1 at 2015-04-01 13:19:00 -0300
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT `jobs`.* FROM `jobs`[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `comments` WHERE `comments`.`job_id` = 2
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `comments` WHERE `comments`.`job_id` = 4[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `comments` WHERE `comments`.`job_id` = 5
+  Rendered jobs/_job.html.erb (20.5ms)
+  Rendered jobs/index.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 86ms (Views: 76.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 13:19:00 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 13:19:00 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 13:19:00 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 13:19:00 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 13:24:09 -0300
+Processing by JobsController#premium as HTML
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT `jobs`.* FROM `jobs` WHERE `jobs`.`premium` = 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM `comments` WHERE `comments`.`job_id` = 5
+  Rendered jobs/_job.html.erb (3.6ms)
+  Rendered jobs/premium.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 51ms (Views: 49.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 13:24:10 -0300
+Processing by JobsController#premium as HTML
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT `jobs`.* FROM `jobs` WHERE `jobs`.`premium` = 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `comments` WHERE `comments`.`job_id` = 5
+  Rendered jobs/_job.html.erb (1.9ms)
+  Rendered jobs/premium.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 13:24:10 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 13:24:10 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 13:24:10 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 13:24:10 -0300
+
+
+Started GET "/jobs/5" for 127.0.0.1 at 2015-04-01 13:24:11 -0300
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT  `jobs`.* FROM `jobs` WHERE `jobs`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `comments` WHERE `comments`.`job_id` = 5
+  Rendered collection (0.0ms)
+  Rendered jobs/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 52ms (Views: 49.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/jobs/5" for 127.0.0.1 at 2015-04-01 13:27:20 -0300
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT  `jobs`.* FROM `jobs` WHERE `jobs`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `comments` WHERE `comments`.`job_id` = 5
+  Rendered collection (0.0ms)
+  Rendered jobs/show.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 70ms (Views: 58.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 13:27:20 -0300
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for 127.0.0.1 at 2015-04-01 13:27:20 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 13:27:20 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 13:27:20 -0300

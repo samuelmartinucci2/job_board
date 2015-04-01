@@ -1,14 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @job.title %>
-</p>
+<h3>
+  <%= job_title @job %>
+</h3>
+
+<%= simple_format @job.description %>
 
 <p>
-  <strong>Description:</strong>
-  <%= @job.description %>
+  <%= pluralize(@job.comments.size, "comment") %>
+  <%= link_to 'Edit', edit_job_path(@job) %> |
+  <%= link_to 'Back', jobs_path %>
 </p>
 
-<%= link_to 'Edit', edit_job_path(@job) %> |
-<%= link_to 'Back', jobs_path %>
+<h2>Comments</h2>
+
+<%= render @job.comments %>
