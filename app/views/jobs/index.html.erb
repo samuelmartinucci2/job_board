@@ -3,8 +3,9 @@
 <h1>Listing Jobs</h1>
 
 <%= render @jobs %>
-
+<%= paginate @jobs %>
 <br>
+
 
 <%= link_to 'New Job', new_job_path %>
 <%= link_to 'Premium Jobs', root_path %>

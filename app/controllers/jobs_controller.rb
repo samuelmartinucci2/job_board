@@ -4,11 +4,11 @@ class JobsController < ApplicationController
   # GET /jobs
   # GET /jobs.json
   def index
-    @jobs = Job.all
+    @jobs = Job.most_recent.all.page(params[:page]).per(3)
   end
 
   def premium
-    @jobs = Job.where(premium: true).all
+    @jobs = Job.where(premium: true).order("created_at DESC").page(params[:page]).per(3)
   end
 
   # GET /jobs/1
