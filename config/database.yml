@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: job-board_production
   username: job-board
   password: <%= ENV['JOB-BOARD_DATABASE_PASSWORD'] %>
