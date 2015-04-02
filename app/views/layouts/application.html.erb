@@ -8,6 +8,18 @@
 </head>
 <body>
 
+<% if current_company %>
+    <%=current_company.name %>
+<% else %>
+    <%= link_to "Login", companies_login_path %>
+    <%= link_to "Create Account", new_company_path %>
+<% end %>
+
+<div class="container">
+  <% if notice %><p id="notice"><%= notice %></p><% end %>
+  <% if alert %><p id="alert"><%= alert %></p><% end %>
+</div>
+
 <%= yield %>
 
 </body>

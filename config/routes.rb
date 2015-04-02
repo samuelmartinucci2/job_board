@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
   root to: "jobs#premium"
 
+  resources :companies, only: [:new, :create]
   resources :jobs do
     post "comments", to: "comments#create"
   end
 
-  get 'hello/world'
+  get "/companies/login", to: "login#new"
+  post "/companies/login", to: "login#create"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

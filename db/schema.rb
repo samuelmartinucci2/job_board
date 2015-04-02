@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150401161519) do
+ActiveRecord::Schema.define(version: 20150401224501) do
 
   create_table "comments", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -21,12 +21,24 @@ ActiveRecord::Schema.define(version: 20150401161519) do
     t.datetime "updated_at",               null: false
   end
 
-  create_table "jobs", force: :cascade do |t|
-    t.string   "title",       limit: 255
-    t.text     "description", limit: 65535
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
-    t.boolean  "premium",     limit: 1
+  create_table "companies", force: :cascade do |t|
+    t.string   "name",               limit: 255
+    t.string   "email",              limit: 255
+    t.string   "encrypted_password", limit: 255
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
   end
+
+  create_table "jobs", force: :cascade do |t|
+    t.string   "title",          limit: 255
+    t.text     "description",    limit: 65535
+    t.datetime "created_at",                               null: false
+    t.datetime "updated_at",                               null: false
+    t.boolean  "premium",        limit: 1
+    t.integer  "company_id",     limit: 4
+    t.integer  "comments_count", limit: 4,     default: 0
+  end
+
+  add_index "jobs", ["company_id"], name: "index_jobs_on_company_id", using: :btree
 
 end

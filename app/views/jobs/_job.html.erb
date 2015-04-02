@@ -6,7 +6,9 @@
 
 <p>
     <%= pluralize(job.comments.size, "comment") %>
-    <%= link_to 'Show', job %> |
-    <%= link_to 'Edit', edit_job_path(job) %> |
-    <%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <%= link_to 'Show', job %>
+    <% if current_company == job.company %>
+        | <%= link_to 'Edit', edit_job_path(job) %> |
+        <%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% end %>
 </p>
